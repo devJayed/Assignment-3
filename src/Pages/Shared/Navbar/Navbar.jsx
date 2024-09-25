@@ -39,7 +39,7 @@ const Navbar = () => {
           </ul>
         </div>
         {/* Left side website name */}
-        <a className="btn btn-ghost text-xl">Book Shop</a>
+        <a className="btn btn-ghost text-xl">Boi Bitan</a>
       </div>
       {/* center items  */}
       <div className="navbar-center hidden lg:flex">
