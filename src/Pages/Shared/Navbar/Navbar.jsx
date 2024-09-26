@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 mb-4">
       <div className="navbar-start">
         {/* Dropdown for small size */}
         <div className="dropdown">
