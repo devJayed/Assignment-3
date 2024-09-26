@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BookCard = ({ bookItem }) => {
-  const { image, tags, bookName, author, category, rating } = bookItem;
+  const { bookId, image, tags, bookName, author, category, rating } = bookItem;
 
   return (
-    <div className="book-card border p-4 rounded shadow-md max-w-sm">
+    <div className="flex flex-col justify-between h-full border p-4 rounded-lg shadow-lg">
       {/* Cover Image */}
       <div className="book-cover">
         <img src={image} alt={`${bookName} cover`} className="w-full h-auto" />
@@ -37,8 +38,10 @@ const BookCard = ({ bookItem }) => {
       </div>
 
       {/* Action Button */}
-      <div className="mt-4">
-        <button className="btn btn-primary w-full">Book Details</button>
+      <div className="mt-auto">
+        <Link to={`/showDetails/${bookId}`}>
+          <button className="btn btn-primary w-full mt-4">Book Details</button>
+        </Link>
       </div>
     </div>
   );

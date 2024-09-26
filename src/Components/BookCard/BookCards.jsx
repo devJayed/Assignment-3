@@ -32,12 +32,14 @@ const BookCards = () => {
 
   return (
     <div>
-      <h1>Book List</h1>
-      <ul>
+      <h1 className="text-2xl font-bold text-center text-gray-800 mb-8">
+        Book List
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {BookCards.map((bookItem) => (
           <BookCard key={bookItem.bookId} bookItem={bookItem}></BookCard>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
