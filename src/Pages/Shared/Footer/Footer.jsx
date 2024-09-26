@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <div>
+    <div className="mt-16">
       <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
         <div>
-          <img src="/logo.webp" alt="Book Store Logo" className="w-32 h-32" />
+          <Link to={"/"}>
+            <img src="/logo.webp" alt="Book Store Logo" className="w-32 h-32" />
+          </Link>
           <p className="font-bold">
             Boi Bitan <br /> Your favorite place for books since 2024
           </p>
