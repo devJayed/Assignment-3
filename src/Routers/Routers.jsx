@@ -42,6 +42,10 @@ export const router = createBrowserRouter([
         },
         element: <ShowDetails />,
       },
+      {
+        path: "/faq",
+        element: <FAQ />,
+      },
     ],
   },
 ]);
