@@ -3,11 +3,13 @@ import Home from "../Pages/Home/Home/Home";
 import Main from "../Layout/Main";
 import ShowDetails from "../Pages/ShowDetails/ShowDetails";
 import FAQ from "../Pages/FAQ/FAQ";
+import NotFound from "../Pages/NotFound/NotFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "/",
